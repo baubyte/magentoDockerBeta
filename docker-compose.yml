@@ -71,6 +71,8 @@ services:
 
   elasticsearch:
     image: elasticsearch:${ELASTICSEARCH_VERSION}
+    ports:
+      - 9200:9200
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true

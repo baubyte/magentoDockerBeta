@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+docker-compose exec -T phpfpm bin/magento setup:di:compile

@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+docker-compose exec -T phpfpm bin/magento module:disable Magento_TwoFactorAuth
+

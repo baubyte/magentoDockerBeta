@@ -88,6 +88,7 @@ COPY ./www.conf /usr/local/etc/php-fpm.d/
 COPY ./php.ini /usr/local/etc/php/
 COPY ./php-fpm.conf /usr/local/etc/
 COPY bin/cronstart /usr/local/bin/
+RUN chmod a+x /usr/local/bin/cronstart
 
 COPY . /etc/nginx/html
 COPY . /var/www/html 

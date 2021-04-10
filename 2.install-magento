@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker-compose exec -T phpfpm php bin/magento setup:install --base-url="http://localhost/" --db-host="db" --db-name="magento" --db-user="magento" --db-password="magento" --admin-firstname="Administrador" --admin-lastname="Magento" --admin-email="admin@admin.com" --admin-user="administrador" --admin-password="administradorMagento123" --language="es_ES" --currency="ARS" --timezone="America/Argentina/Buenos_Aires" --use-rewrites="1" --backend-frontname="system" --search-engine="elasticsearch7" --elasticsearch-host="elasticsearch" --elasticsearch-port="9200" --elasticsearch-index-prefix="magento"
